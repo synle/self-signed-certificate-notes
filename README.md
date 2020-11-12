@@ -13,12 +13,19 @@ https://success.outsystems.com/Support/Enterprise_Customers/Installation/Add_sel
 
 https://docs.microsoft.com/en-us/skype-sdk/sdn/articles/installing-the-trusted-root-certificate
 
-- open mmc.exe
-- File > Add/Remove Snap-in
-- Certificate > Computer Account > Local Computer
-- Certificates (Local Computer) > Trusted Root Certification Authorities
+- Open cmd and run this`mmc.exe`
+- Open menu `File` > `Add/Remove Snap-in`
+- `Certificate` > `Computer Account` > `Local Computer`
+- `Certificates (Local Computer)` > `Trusted Root Certification Authorities`
+- Right click the store (`Trusted Root Certification Authorities`) and choose `All Tasks` > `Import`
 - Import cert `server.crt`
 
 
 ### New Cert Script
 [Script To Generate New Self Signed Cert](https://github.com/synle/self-signed-certificate-notes/blob/main/generate-new-cert.sh)
+
+
+### Convert PEM to CRT
+```
+openssl x509 -outform der -in charles.pem -out charles.crt
+```
