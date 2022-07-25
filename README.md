@@ -47,3 +47,9 @@ openssl x509 -outform der -in charles.pem -out charles.crt
 
 ### Bypass Chrome safe cert
 Type in this in the browser background `thisisunsafe`
+
+### Hooking up to CRA React App
+```
+export SSL_CRT_FILE=~/server.crt
+export SSL_KEY_FILE=~/server.key
+```
