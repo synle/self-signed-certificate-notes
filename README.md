@@ -9,6 +9,7 @@
 Or run this
 
 ```
+cd ~
 curl -s https://raw.githubusercontent.com/synle/self-signed-certificate-notes/main/generate-new-cert.sh | bash
 ```
 
