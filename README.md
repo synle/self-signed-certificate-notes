@@ -28,16 +28,18 @@ System Keychains > System > Choose certificates tab (refer to this screenshot)
 
 ### Install cert on Windows
 
-https://success.outsystems.com/Support/Enterprise_Customers/Installation/Add_self_signed_certificate_to_trusted_root_store_on_OutSystems
+- Open the `server.crt`
+- Click on `Install Certificate...`
+- Choose `Local Machine`
+- Choose `Place all certificates in the following store`
+- Then choose `Trusted Root Certification Authority`
+- Choose proceed to install it
 
-https://docs.microsoft.com/en-us/skype-sdk/sdn/articles/installing-the-trusted-root-certificate
+![image](https://user-images.githubusercontent.com/3792401/217969137-63699b95-673f-4fca-b81a-aec41a0a2b8b.png)
+![image](https://user-images.githubusercontent.com/3792401/217969155-27f214a3-e0f7-463f-9046-43b56891d82f.png)
+![image](https://user-images.githubusercontent.com/3792401/217969189-4d3fe0aa-648a-4d71-bb85-b917e6e9c345.png)
+![image](https://user-images.githubusercontent.com/3792401/217969245-f95a9e03-bfba-4b5f-98cc-ca054a375096.png)
 
-- Open cmd and run this`mmc.exe`
-- Open menu `File` > `Add/Remove Snap-in`
-- `Certificate` > `Computer Account` > `Local Computer`
-- `Certificates (Local Computer)` > `Trusted Root Certification Authorities`
-- Right click the store (`Trusted Root Certification Authorities`) and choose `All Tasks` > `Import`
-- Import cert `server.crt`
 
 
 ### Convert PEM to CRT
