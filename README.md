@@ -36,8 +36,11 @@ System Keychains > System > Choose certificates tab (refer to this screenshot)
 - Choose proceed to install it
 
 ![image](https://user-images.githubusercontent.com/3792401/217969137-63699b95-673f-4fca-b81a-aec41a0a2b8b.png)
+
 ![image](https://user-images.githubusercontent.com/3792401/217969155-27f214a3-e0f7-463f-9046-43b56891d82f.png)
+
 ![image](https://user-images.githubusercontent.com/3792401/217969189-4d3fe0aa-648a-4d71-bb85-b917e6e9c345.png)
+
 ![image](https://user-images.githubusercontent.com/3792401/217969245-f95a9e03-bfba-4b5f-98cc-ca054a375096.png)
 
 
