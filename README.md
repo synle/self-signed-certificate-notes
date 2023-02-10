@@ -54,3 +54,9 @@ Type in this in the browser background `thisisunsafe`
 export SSL_CRT_FILE=~/server.crt
 export SSL_KEY_FILE=~/server.key
 ```
+
+
+### Proxy a http host with https 
+```bash
+npx local-ssl-proxy --key ~/server.key --cert ~/server.crt --source 3001 --target 3000
+```
