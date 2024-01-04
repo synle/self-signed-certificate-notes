@@ -61,6 +61,10 @@ export SSL_KEY_FILE=~/server.key
 ```
 
 
+### Sample proxy code  
+https://github.com/synle/node-proxy-example/tree/master
+
+
 ### Proxy a http host with https 
 ```bash
 npx local-ssl-proxy --key ~/server.key --cert ~/server.crt --source 3001 --target 3000
