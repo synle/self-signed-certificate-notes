@@ -77,14 +77,17 @@ IP.50 = 192.168.1.50
 
 rm -f server.key server.crt
 
-openssl req -x509 -nodes -days 36500 -newkey rsa:2048 -keyout server.key -out server.crt  -config /tmp/openssl.conf
+openssl req -x509 -nodes -days 36500 -newkey rsa:2048 \
+  -keyout server.key \
+  -out server.crt  \
+  -config /tmp/openssl.conf
 
 echo """
 ############################################
 # show content of keys
 ############################################
-cat server.crt
-cat server.key
+cat server.crt # csr cert pem file
+cat server.key # key pem file
 
 ############################################
 # use this command to validate the cert
