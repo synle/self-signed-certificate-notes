@@ -90,6 +90,12 @@ cat server.crt # csr cert pem file
 cat server.key # key pem file
 
 ############################################
+# generate pkcs12 certs
+############################################
+openssl pkcs12 -export -in server.crt -inkey server.key -out server.p12
+
+
+############################################
 # use this command to validate the cert
 ############################################
 openssl x509 -noout -text -in server.crt
