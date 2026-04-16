@@ -10,7 +10,7 @@ Or run this
 
 ```
 cd ~
-curl -sL "https://github.com/synle/self-signed-certificate-notes/blob/head/generate-new-cert.sh?raw=1" | bash
+curl -fsSL "https://github.com/synle/self-signed-certificate-notes/blob/head/generate-new-cert.sh?raw=1" | bash
 ```
 
 ### Install cert on Mac Keychain
