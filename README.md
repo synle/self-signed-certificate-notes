@@ -15,13 +15,11 @@ curl -fsSL "https://raw.githubusercontent.com/synle/self-signed-certificate-note
 
 ### Install cert on Mac Keychain
 
-Note this cert file will be likely shown in
-System Keychains > System > Choose certificates tab (refer to this screenshot)
+Shows up under System Keychains > System > Certificates tab.
 
 ![image](https://user-images.githubusercontent.com/3792401/118021293-f159af00-b30f-11eb-91a5-4837375500a9.png)
 
 ![image](https://user-images.githubusercontent.com/3792401/118021532-30880000-b310-11eb-8155-2a533b3f003d.png)
-
 
 - Drag and drop it `server.crt` into mac keychains
 - `Always Trust`
@@ -31,9 +29,8 @@ System Keychains > System > Choose certificates tab (refer to this screenshot)
 - Open the `server.crt`
 - Click on `Install Certificate...`
 - Choose `Local Machine`
-- Choose `Place all certificates in the following store`
-- Then choose `Trusted Root Certification Authority`
-- Choose proceed to install it
+- Choose `Place all certificates in the following store` → `Trusted Root Certification Authority`
+- Proceed to install
 
 ![image](https://user-images.githubusercontent.com/3792401/217969137-63699b95-673f-4fca-b81a-aec41a0a2b8b.png)
 
@@ -43,13 +40,10 @@ System Keychains > System > Choose certificates tab (refer to this screenshot)
 
 ![image](https://user-images.githubusercontent.com/3792401/217969245-f95a9e03-bfba-4b5f-98cc-ca054a375096.png)
 
-
-
 ### Convert PEM to CRT
 ```
 openssl x509 -outform der -in charles.pem -out charles.crt
 ```
-
 
 ### Bypass Chrome safe cert
 Type in this in the browser background `thisisunsafe`
@@ -60,12 +54,10 @@ export SSL_CRT_FILE=~/server.crt
 export SSL_KEY_FILE=~/server.key
 ```
 
-
-### Sample proxy code  
+### Sample proxy code
 https://github.com/synle/node-proxy-example/tree/master
 
-
-### Proxy a http host with https 
+### Proxy a http host with https
 ```bash
 npx local-ssl-proxy --key ~/server.key --cert ~/server.crt --source 3001 --target 3000
 ```
